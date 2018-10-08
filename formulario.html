@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="formulario.css" rel="stylesheet" type="text/css">
+	<title></title>
+	<script type="text/javascript" defer src="pregunta3.js"></script>
+</head>
+<body onload="p3desactivar()">
+	<div>
+		<button onclick="resetear()" id="btnReset" type="reset">Reiniciar</button>
+		<button onclick="comprobar1()" type="button" id="btnRadio">Comprobar</button>
+		<h4>¿1.-En que año se descubrió América?</h4>
+		
+			
+			<p id="pcolor" class="colorfondo"><input id="intp1" type="radio" name="iptRes" value="1492">1492 <img id="imagenp11" src="https://orig00.deviantart.net/f2ca/f/2011/148/c/0/png_fondo_blanco_by_camilhitha124-d3hgxl4.png" width="20" height="20"></p>
+			<p id="pcolor2" class="colorfondo"><input id="intp2" type="radio" name="iptRes" value="1582">1582 <img id="imagenp12" src="https://orig00.deviantart.net/f2ca/f/2011/148/c/0/png_fondo_blanco_by_camilhitha124-d3hgxl4.png" width="20" height="20"></p>
+			<p id="pcolor3" class="colorfondo"><input id="intp3" type="radio" name="iptRes" value="1252">1252 <img id="imagenp13" src="https://orig00.deviantart.net/f2ca/f/2011/148/c/0/png_fondo_blanco_by_camilhitha124-d3hgxl4.png" width="20" height="20"></p>
+			<p class="p1" id="pContador">Contador: 1/3</p>
+	</div>
+	<div>
+		<button id="reset" onclick="limpiar()">Reiniciar</button>
+		<button id="enviar" onclick="comprobar2()">Comprobar</button>
+		<h4>¿2.-La tierra es plana?</h4>
+		<p class="colorfondo" id="pcolor4"><input id="verdad" type="radio" name="respuesta" value="true"> Verdadero  <img id="imagen1" src="https://orig00.deviantart.net/f2ca/f/2011/148/c/0/png_fondo_blanco_by_camilhitha124-d3hgxl4.png" width="20" height="20"></p>
+		<p class="colorfondo" id="pcolor5"><input id="falso" type="radio" name="respuesta" value="falso"> Falso  <img id="imagen2" src="https://orig00.deviantart.net/f2ca/f/2011/148/c/0/png_fondo_blanco_by_camilhitha124-d3hgxl4.png" width="20" height="20"></p>
+		<p class="p2" id="cont">Contador: 1/3</p>
+	</div>
+	<div>
+		<button onclick="reiniciar3()">Reiniciar</button>
+		<button id="enviar3" onclick="respuesta3()">Comprobar</button>
+		<h4>3.- ¿Explica que piensas sobre el futbol?</h4>
+		<textarea  id="tx3" class="textarea1" onkeypress="b3activar()"></textarea>
+		<p id="p3r"class="p3"></p>
+	</div>
+
+
+</body>
+</html>
